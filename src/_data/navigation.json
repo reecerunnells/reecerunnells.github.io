@@ -1,7 +1,8 @@
 {
   "items": [
-    { "url": "/", "label": "Home" },
-    { "url": "/about/", "label": "About" },
-    { "url": "/experience/", "label": "Experience" }
+    { "num": 1, "url": "/", "label": "Home", "slug": "Index" },
+    { "num": 2, "url": "/about/", "label": "About", "slug": "Bio" },
+    { "num": 3, "url": "/experience/", "label": "Experience", "slug": "Work" },
+    { "num": 4, "url": "/projects/", "label": "Projects", "slug": "Shipped" }
   ]
 }

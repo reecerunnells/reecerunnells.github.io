@@ -2,12 +2,11 @@
 
 Personal portfolio site, built with [Eleventy](https://www.11ty.dev/) (`@11ty/eleventy`).
 
-## Branches
+## Deploys
 
-- **`main`** — production. Pushes here build the site and deploy to the `gh-pages` branch (GitHub Pages).
-- **`dev`** — day-to-day work. Pushes here run CI (build only); nothing is deployed until you merge into `main`.
+**GitHub Actions deploys only on push to `main`** (minified build → `gh-pages`).
 
-Suggested flow: branch from `dev` (or work directly on `dev`), open PRs into `dev`, and when you are ready to release, merge `dev` → `main`.
+Work locally or on any other branch until you are ready; nothing updates the live site until you merge or push to `main`. Opening a PR **into** `main` runs a CI build (no deploy) so you can verify it before merging.
 
 ## Local development
 
@@ -20,6 +19,7 @@ Then open the URL Eleventy prints (usually `http://localhost:8080`).
 
 ```bash
 npm run build
+npm run build:prod   # same output as CI (minified)
 ```
 
 Output is written to `_site/`.
@@ -34,4 +34,4 @@ Output is written to `_site/`.
 
 ## GitHub Pages
 
-In the repo **Settings → Pages**, set the source to deploy from the **`gh-pages`** branch (root). If you use the included workflow, it updates that branch on every push to **`main`**.
+In the repo **Settings → Pages**, set the source to deploy from the **`gh-pages`** branch (root). The workflow updates that branch on pushes to **`main`**.

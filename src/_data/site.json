@@ -1,7 +1,15 @@
 {
   "name": "Reece Runnells",
-  "title": "Reece Runnells — Portfolio",
+  "title": "Reece Runnells — Full-stack developer",
   "url": "https://reecerunnells.github.io",
-  "description": "Personal site and career portfolio.",
-  "author": "Reece Runnells"
+  "description": "Full-stack developer who uses AI tooling and solid engineering to ship fast, reliable results.",
+  "author": "Reece Runnells",
+  "mastheadDate": "2026",
+  "mastheadTag": "Portfolio",
+  "mastheadIssue": "Engineering notes",
+  "homeCallout": {
+    "lede": "I build end-to-end: services, APIs, UIs, and the glue between them. Modern AI assistants and automation are part of the toolkit—not a gimmick, but a way to compress design–build–learn loops.",
+    "sub": "Pragmatic stack choices, clear tradeoffs, and momentum toward something shippable. Employer- and domain-specific detail lives under Experience."
+  },
+  "ochreBannerTitle": "On the desk"
 }

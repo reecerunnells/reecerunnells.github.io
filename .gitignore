@@ -17,3 +17,7 @@ yarn-error.log*
 # local env
 .env
 .env*.local
+
+# Local content drafts (not for the public repo)
+/_private/
+/design_refs/
