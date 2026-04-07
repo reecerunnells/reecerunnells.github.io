@@ -1,21 +1,21 @@
 ---
 layout: layouts/base.njk
 title: About
-description: About Reece Runnells — Salesforce engineer on Data Cloud, Personalization, and AI integrations.
+description: About Reece Runnells — full-stack developer, AI tooling, and how to get in touch.
 ---
 
 <section class="callout callout--dark" aria-label="Section intro">
-  <p class="callout__lede">Engineering at the intersection of customer data, AI, and what marketers can safely ship.</p>
-  <p class="callout__sub">Buddy Media → Salesforce (2012); since then, deeper into Data Cloud, personalization, and full-stack services.</p>
+  <p class="callout__lede">Shipping software with both hands: solid fundamentals and modern AI tooling when it earns its keep.</p>
+  <p class="callout__sub">Résumé-ready roles, timelines, and employer context are on <a href="{{ '/experience/' | url }}">Experience</a>—this page stays high level.</p>
 </section>
 
 <div class="prose">
   <h1>About</h1>
-  <p class="lead">I am a full-stack engineer at Salesforce, focused on <strong>Personalization</strong> and <strong>Data Cloud</strong>. Most days touch some mix of services and UIs, APIs, data pipelines, and AI integrations—CDP, activation, Einstein—so recommendations and decisions stay useful, fast, and well-guarded.</p>
+  <p class="lead">I am a <strong>full-stack developer</strong>. I care about fast iteration without cutting corners on the things that hurt you later: boundaries between services, honest error handling, and code the next person can follow.</p>
 
-  <p>I have been a <strong>scrum lead</strong> and care about short feedback loops with product and customers. That showed up clearly in work like the <strong>Personalization decisioning pipeline</strong>, where we built out much of the Salesforce Core setup and saw the business line turn profitable in its first year.</p>
+  <p>I lean on <strong>AI tooling</strong>—IDE assistants, agents, structured prompts—where they shorten feedback cycles: exploring APIs, drafting implementations, refining tests, and summarizing unfamiliar code. The goal is quicker, clearer outcomes; ownership and review stay human.</p>
 
-  <p>This site is a lightweight portfolio to pair with my résumé—concise enough for recruiters, technical enough for engineers. Emphasis: <strong>AI/ML product engineering</strong> and <strong>full-stack</strong> depth on Salesforce’s data and marketing stack.</p>
+  <p>This site is a small portfolio to sit next to a résumé: enough signal for recruiters, enough depth for engineers. For where I have worked and what I have shipped in each role, start with <a href="{{ '/experience/' | url }}">Experience</a> and <a href="{{ '/projects/' | url }}">Projects</a>.</p>
 
   <h2>Contact</h2>
   <ul>

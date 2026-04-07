@@ -1,7 +1,7 @@
 ---
 layout: layouts/base.njk
 title: Projects
-description: Selected portfolio work — Salesforce Personalization, Data Cloud, and full-stack delivery.
+description: Selected portfolio work and case summaries — detail varies by what is safe to share publicly.
 ---
 
 <section class="panel panel--ochre" aria-labelledby="proj-title">

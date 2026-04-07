@@ -1,13 +1,11 @@
-# Production: push main → minified build → deploy site root on gh-pages (preserves /dev preview).
-# Preview: push dev → deploy to gh-pages/dev/ with pathPrefix /dev/ (validate before merging).
-# Optional: set repository secret PREVIEW_PASSWORD for a client-side unlock on /dev only (not true HTTP auth).
-# PRs to main: build only (no deploy).
+# Deploy only when you push to main. Work on other branches locally (or push them)
+# without triggering a site update—merge to main when the site should change.
 
 name: Build and deploy
 
 on:
   push:
-    branches: [main, dev]
+    branches: [main]
   pull_request:
     branches: [main]
 
@@ -47,33 +45,8 @@ jobs:
         env:
           MINIFY: "1"
       - run: touch ./_site/.nojekyll
-      - name: Deploy to GitHub Pages (root)
+      - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
           folder: _site
-          # Keep preview subtree when production deploy cleans orphan files
-          clean-exclude: |
-            dev
-
-  deploy-preview:
-    if: github.event_name == 'push' && github.ref == 'refs/heads/dev'
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: "20"
-          cache: npm
-      - run: npm ci
-      - run: npm run build
-        env:
-          PATH_PREFIX: /dev/
-          PREVIEW_PASSWORD: ${{ secrets.PREVIEW_PASSWORD }}
-      - run: touch ./_site/.nojekyll
-      - name: Deploy preview to /dev
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          branch: gh-pages
-          folder: _site
-          target-folder: dev

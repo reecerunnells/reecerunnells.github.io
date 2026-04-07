@@ -1,27 +1,13 @@
 /** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
 
-const crypto = require("node:crypto");
 const fs = require("node:fs");
 const path = require("node:path");
 
-/** Only production deploy (main) sets MINIFY=1; /dev preview stays readable. */
+/** Production CI sets MINIFY=1 for smaller deploy artifacts. */
 const shouldMinify = process.env.MINIFY === "1";
-
-/** GitHub Pages preview: deploy with PATH_PREFIX=/dev/ so assets and links resolve under /dev/. */
-const pathPrefix = process.env.PATH_PREFIX || "/";
-
-const trimmedPrefix = pathPrefix.replace(/\/+$/, "") || "/";
-const isDevPreviewBuild = trimmedPrefix === "/dev";
-
-const previewPassword = (process.env.PREVIEW_PASSWORD || "").trim();
-const previewAuthHash =
-  isDevPreviewBuild && previewPassword
-    ? crypto.createHash("sha256").update(previewPassword, "utf8").digest("hex")
-    : "";
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addShortcode("year", () => String(new Date().getFullYear()));
-  eleventyConfig.addGlobalData("previewAuthHash", previewAuthHash);
 
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addPassthroughCopy("src/css");
@@ -74,7 +60,7 @@ module.exports = function (eleventyConfig) {
   }
 
   return {
-    pathPrefix,
+    pathPrefix: "/",
     dir: {
       input: "src",
       includes: "_includes",

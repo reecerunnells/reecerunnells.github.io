@@ -1,13 +1,13 @@
 ---
 layout: layouts/base.njk
 title: Home
-description: Full-stack engineer at Salesforce on Data Cloud and Personalization—AI services, data pipelines, and integrations for marketers.
+description: Full-stack developer — shipping web products with pragmatic engineering and AI-assisted velocity.
 ---
 
 <section class="spread spread--hero">
   <div class="prose">
     <h1>{{ site.name }}</h1>
-    <p class="lead">Senior Member Technical Staff on <strong>Personalization</strong> and <strong>Data Cloud</strong> at Salesforce. I build full-stack software—Java and JavaScript services, APIs, admin UIs, and AI-backed features—so marketers can use CDP, activation, and Einstein responsibly and at scale.</p>
+    <p class="lead"><strong>Full-stack developer</strong>—comfortable across the stack and selective with tools. I use <strong>LLMs, agents, and good prompts</strong> where they buy speed and clarity: prototyping, codegen, reviews, and operational glue—not as a substitute for judgment or system design.</p>
   </div>
 </section>
 
@@ -18,15 +18,15 @@ description: Full-stack engineer at Salesforce on Data Cloud and Personalization
 
 <section class="panel panel--ochre" aria-labelledby="panel-title">
   <h2 id="panel-title" class="panel__headline">{{ site.ochreBannerTitle }}</h2>
-  <p class="panel__deck">Keywords I lean on: <strong>data pipelines</strong>, <strong>AI integrations</strong>, and <strong>full-stack</strong> delivery—plus scrum leadership and tight iteration loops with product and customers.</p>
+  <p class="panel__deck">How I like to work: <strong>iterate in small slices</strong>, keep production constraints in mind early, and use AI where it shortens the path to a real answer.</p>
   <div class="columns-2">
     <article>
-      <h3>Now</h3>
-      <p>Shipping in Data Cloud and personalization: LLM-driven capabilities, retrieval and orchestration, guardrails, and custom MCP-style architecture that ties marketing systems together safely.</p>
+      <h3>Focus</h3>
+      <p>Reliable services, clear APIs, honest UX, and data that doesn’t lie. Boring-correct beats flashy-wrong.</p>
     </article>
     <article>
       <h3>On this site</h3>
-      <p><a href="{{ '/about/' | url }}">About</a> for background and contact. <a href="{{ '/experience/' | url }}">Experience</a> for roles and timeline. <a href="{{ '/projects/' | url }}">Projects</a> highlights work you can point hiring managers to from your résumé.</p>
+      <p><a href="{{ '/about/' | url }}">About</a> for background and contact. <a href="{{ '/experience/' | url }}">Experience</a> for roles and employers in full detail. <a href="{{ '/projects/' | url }}">Projects</a> for shipped work to point recruiters at.</p>
     </article>
   </div>
 </section>
