@@ -1,0 +1,16 @@
+{
+  "jobs": [
+    {
+      "title": "Your role",
+      "company": "Company name",
+      "dates": "2020 — Present",
+      "summary": "One line about impact and scope. Add more roles below."
+    },
+    {
+      "title": "Previous role",
+      "company": "Earlier company",
+      "dates": "2016 — 2020",
+      "summary": "What you focused on and outcomes you care to highlight."
+    }
+  ]
+}

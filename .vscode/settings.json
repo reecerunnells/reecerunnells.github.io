@@ -1,4 +1,3 @@
 {
-    "editor.formatOnSave": true,
-    "eslint.alwaysShowStatus": true
+  "editor.formatOnSave": true
 }
