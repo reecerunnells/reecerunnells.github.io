@@ -18,9 +18,9 @@
     <nav class="nav" aria-label="Primary">
       <a class="nav-brand" href="/">{{ site.name }}</a>
       <ul class="nav-list">
-        {% for item in navigation.items %}
-        <li><a href="{{ item.url }}" {% if page.url == item.url %}aria-current="page"{% endif %}>{{ item.label }}</a></li>
-        {% endfor %}
+        {%- for item in navigation.items %}
+        <li><a href="{{ item.url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.label }}</a></li>
+        {%- endfor %}
       </ul>
     </nav>
   </header>
