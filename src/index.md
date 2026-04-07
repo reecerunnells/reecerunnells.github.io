@@ -26,7 +26,7 @@ description: Full-stack engineer at Salesforce on Data Cloud and Personalization
     </article>
     <article>
       <h3>On this site</h3>
-      <p><a href="/about/">About</a> for background and contact. <a href="/experience/">Experience</a> for roles and timeline. <a href="/projects/">Projects</a> highlights work you can point hiring managers to from your résumé.</p>
+      <p><a href="{{ '/about/' | url }}">About</a> for background and contact. <a href="{{ '/experience/' | url }}">Experience</a> for roles and timeline. <a href="{{ '/projects/' | url }}">Projects</a> highlights work you can point hiring managers to from your résumé.</p>
     </article>
   </div>
 </section>

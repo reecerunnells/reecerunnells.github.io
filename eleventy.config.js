@@ -1,4 +1,8 @@
 /** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
+
+/** GitHub Pages preview: deploy with PATH_PREFIX=/dev/ so assets and links resolve under /dev/. */
+const pathPrefix = process.env.PATH_PREFIX || "/";
+
 module.exports = function (eleventyConfig) {
   eleventyConfig.addShortcode("year", () => String(new Date().getFullYear()));
 
@@ -6,6 +10,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/css");
 
   return {
+    pathPrefix,
     dir: {
       input: "src",
       includes: "_includes",

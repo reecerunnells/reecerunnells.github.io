@@ -1,3 +1,7 @@
+# Production: push main → deploy site root on gh-pages (preserves /dev preview).
+# Preview: push dev → deploy to gh-pages/dev/ with pathPrefix /dev/ (validate before merging).
+# PRs to main: build only (no deploy).
+
 name: Build and deploy
 
 on:
@@ -10,27 +14,60 @@ permissions:
   contents: write
 
 concurrency:
-  group: pages-${{ github.ref }}
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
   cancel-in-progress: false
 
 jobs:
   build:
+    if: github.event_name == 'pull_request'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
       - uses: actions/setup-node@v4
         with:
           node-version: "20"
           cache: npm
+      - run: npm ci
+      - run: npm run build
 
+  deploy-production:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
       - run: npm ci
       - run: npm run build
       - run: touch ./_site/.nojekyll
-
-      - name: Deploy to GitHub Pages
-        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+      - name: Deploy to GitHub Pages (root)
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
           folder: _site
+          # Keep preview subtree when production deploy cleans orphan files
+          clean-exclude: |
+            dev
+
+  deploy-preview:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/dev'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+        env:
+          PATH_PREFIX: /dev/
+      - run: touch ./_site/.nojekyll
+      - name: Deploy preview to /dev
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: _site
+          target-folder: dev
