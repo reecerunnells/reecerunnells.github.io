@@ -6,7 +6,7 @@ description: Career history — roles, employers, and scope (including Salesforc
 
 <section class="panel panel--ochre" aria-labelledby="exp-title">
   <h1 id="exp-title" class="panel__headline">Experience</h1>
-  <p class="panel__deck">Where titles, companies, and stack-specific work live—including current focus on enterprise data and AI-backed marketing products. Edit <code>src/_data/experience.json</code> to match your résumé.</p>
+  <p class="panel__deck">Where titles, companies, and stack-specific work live—including current focus on enterprise data and AI-backed marketing products.</p>
 </section>
 
 <div class="prose">
