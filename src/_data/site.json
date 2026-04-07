@@ -1,7 +1,15 @@
 {
   "name": "Reece Runnells",
-  "title": "Reece Runnells — Portfolio",
+  "title": "Reece Runnells — Salesforce · Data Cloud",
   "url": "https://reecerunnells.github.io",
-  "description": "Personal site and career portfolio.",
-  "author": "Reece Runnells"
+  "description": "Full-stack engineer at Salesforce on Personalization and Data Cloud—AI services, integrations, and data pipelines for marketers.",
+  "author": "Reece Runnells",
+  "mastheadDate": "2026",
+  "mastheadTag": "Salesforce · Data Cloud",
+  "mastheadIssue": "Personalization",
+  "homeCallout": {
+    "lede": "Full-stack engineer at Salesforce building AI services on Data Cloud—turning customer data into useful personalization without losing guardrails.",
+    "sub": "Deep in CDP, activation, Einstein, and the plumbing that connects it all: data pipelines, AI integrations, Java and JavaScript services, and fast iteration with the team."
+  },
+  "ochreBannerTitle": "From the stack"
 }

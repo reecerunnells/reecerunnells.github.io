@@ -1,19 +1,32 @@
 ---
 layout: layouts/base.njk
 title: Home
-description: Personal site and career portfolio for Reece Runnells.
+description: Full-stack engineer at Salesforce on Data Cloud and Personalization—AI services, data pipelines, and integrations for marketers.
 ---
 
-<div class="prose">
-  <h1>{{ site.name }}</h1>
-  <p class="lead">This site documents my career—roles, projects, and what I have been building. Replace this introduction with your own summary.</p>
+<section class="spread spread--hero">
+  <div class="prose">
+    <h1>{{ site.name }}</h1>
+    <p class="lead">Senior Member Technical Staff on <strong>Personalization</strong> and <strong>Data Cloud</strong> at Salesforce. I build full-stack software—Java and JavaScript services, APIs, admin UIs, and AI-backed features—so marketers can use CDP, activation, and Einstein responsibly and at scale.</p>
+  </div>
+</section>
 
-  <h2>Now</h2>
-  <p>Add a short “what I am doing now” blurb: current role, focus areas, or side projects.</p>
+<section class="callout callout--dark" aria-label="Introduction">
+  <p class="callout__lede">{{ site.homeCallout.lede }}</p>
+  <p class="callout__sub">{{ site.homeCallout.sub }}</p>
+</section>
 
-  <h2>On this site</h2>
-  <ul>
-    <li><a href="/about/">About</a> — background and how to reach you</li>
-    <li><a href="/experience/">Experience</a> — roles and highlights (edit the data file to match your résumé)</li>
-  </ul>
-</div>
+<section class="panel panel--ochre" aria-labelledby="panel-title">
+  <h2 id="panel-title" class="panel__headline">{{ site.ochreBannerTitle }}</h2>
+  <p class="panel__deck">Keywords I lean on: <strong>data pipelines</strong>, <strong>AI integrations</strong>, and <strong>full-stack</strong> delivery—plus scrum leadership and tight iteration loops with product and customers.</p>
+  <div class="columns-2">
+    <article>
+      <h3>Now</h3>
+      <p>Shipping in Data Cloud and personalization: LLM-driven capabilities, retrieval and orchestration, guardrails, and custom MCP-style architecture that ties marketing systems together safely.</p>
+    </article>
+    <article>
+      <h3>On this site</h3>
+      <p><a href="/about/">About</a> for background and contact. <a href="/experience/">Experience</a> for roles and timeline. <a href="/projects/">Projects</a> highlights work you can point hiring managers to from your résumé.</p>
+    </article>
+  </div>
+</section>

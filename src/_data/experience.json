@@ -1,16 +1,22 @@
 {
   "jobs": [
     {
-      "title": "Your role",
-      "company": "Company name",
-      "dates": "2020 — Present",
-      "summary": "One line about impact and scope. Add more roles below."
+      "title": "Senior Member Technical Staff",
+      "company": "Salesforce · Personalization | Data Cloud",
+      "dates": "July 2015 — Present",
+      "summary": "Full-stack delivery across Salesforce core setup, services, admin UIs, APIs, and AI-backed experiences for marketers. Scrum lead for fast, iterative shipping in CDP, activation, Einstein, and Data Cloud—including custom MCP-style architecture, LLM-driven features, retrieval (RAG), prompt orchestration, broad skill generation, and guardrails so marketing systems stay trustworthy. Notable ship: the Personalization decisioning pipeline and majority of the Salesforce Core–side setup with my immediate team; the line became profitable within its first year."
     },
     {
-      "title": "Previous role",
-      "company": "Earlier company",
-      "dates": "2016 — 2020",
-      "summary": "What you focused on and outcomes you care to highlight."
+      "title": "Member Technical Staff",
+      "company": "Salesforce",
+      "dates": "July 2012 — July 2015",
+      "summary": "Software engineering on Salesforce’s marketing and data-related products; foundation for later AI and Data Cloud work after Buddy Media’s acquisition."
+    },
+    {
+      "title": "Developer",
+      "company": "Buddy Media",
+      "dates": "October 2010 — July 2012",
+      "summary": "Built and maintained web and platform features for social marketing products—experience that carried into Salesforce after the acquisition."
     }
   ]
 }

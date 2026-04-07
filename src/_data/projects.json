@@ -1,0 +1,15 @@
+{
+  "intro": "High-level summaries suitable for a public portfolio. Customer-specific numbers and internal codenames stay off this page unless you choose to add them.",
+  "items": [
+    {
+      "title": "Personalization decisioning pipeline",
+      "tagline": "Recommendations and decisions across Salesforce Core and Data Cloud.",
+      "problem": "Marketers need reliable ways to retrieve and apply recommendations—what to show, offer, or do next—grounded in their customer data and activation workflows.",
+      "contribution": "Built much of the Salesforce Core–side setup with my immediate team: admin experience, services, and integration points that let customers operationalize personalization end to end.",
+      "tech": ["Java", "JavaScript", "Salesforce Connect API", "Data Cloud · CDP · activation", "Einstein / personalization services"],
+      "outcome": "Delivered a profitable line within its first year (public-safe summary; treat specifics as confidential unless approved for sharing).",
+      "link": "",
+      "linkLabel": ""
+    }
+  ]
+}
