@@ -1,5 +1,6 @@
 # Production: push main → deploy site root on gh-pages (preserves /dev preview).
 # Preview: push dev → deploy to gh-pages/dev/ with pathPrefix /dev/ (validate before merging).
+# Optional: set repository secret PREVIEW_PASSWORD for a client-side unlock on /dev only (not true HTTP auth).
 # PRs to main: build only (no deploy).
 
 name: Build and deploy
@@ -64,6 +65,7 @@ jobs:
       - run: npm run build
         env:
           PATH_PREFIX: /dev/
+          PREVIEW_PASSWORD: ${{ secrets.PREVIEW_PASSWORD }}
       - run: touch ./_site/.nojekyll
       - name: Deploy preview to /dev
         uses: JamesIves/github-pages-deploy-action@v4
