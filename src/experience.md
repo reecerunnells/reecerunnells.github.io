@@ -1,7 +1,7 @@
 ---
 layout: layouts/base.njk
 title: Experience
-description: Career history — roles, employers, and scope (including Salesforce Data Cloud and personalization).
+description: Career history — roles in enterprise SaaS and marketing technology.
 ---
 
 <section class="panel panel--ochre" aria-labelledby="exp-title">

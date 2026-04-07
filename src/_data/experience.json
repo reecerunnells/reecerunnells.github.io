@@ -2,21 +2,21 @@
   "jobs": [
     {
       "title": "Senior Member Technical Staff",
-      "company": "Salesforce · Personalization | Data Cloud",
+      "company": "Salesforce",
       "dates": "July 2015 — Present",
-      "summary": "Full-stack delivery across Salesforce core setup, services, admin UIs, APIs, and AI-backed experiences for marketers. Scrum lead for fast, iterative shipping in CDP, activation, Einstein, and Data Cloud—including custom MCP-style architecture, LLM-driven features, retrieval (RAG), prompt orchestration, broad skill generation, and guardrails so marketing systems stay trustworthy. Notable ship: the Personalization decisioning pipeline and majority of the Salesforce Core–side setup with my immediate team; the line became profitable within its first year."
+      "summary": "Full-stack engineering on enterprise marketing and customer-data software: services, admin experiences, APIs, and integrations. Scrum lead for iterative delivery with product and customers. Work spans data-driven marketing workflows, AI-assisted capabilities where policy allows, and the operational controls that keep customer-facing features reliable and trustworthy."
     },
     {
       "title": "Member Technical Staff",
       "company": "Salesforce",
       "dates": "July 2012 — July 2015",
-      "summary": "Software engineering on Salesforce’s marketing and data-related products; foundation for later AI and Data Cloud work after Buddy Media’s acquisition."
+      "summary": "Software engineering on marketing-technology products following the Buddy Media acquisition; backend and platform work that set the stage for later full-stack and data-centric roles."
     },
     {
       "title": "Developer",
       "company": "Buddy Media",
       "dates": "October 2010 — July 2012",
-      "summary": "Built and maintained web and platform features for social marketing products—experience that carried into Salesforce after the acquisition."
+      "summary": "Web and platform development for social marketing products; continued at Salesforce after the acquisition."
     }
   ]
 }
