@@ -4,10 +4,14 @@
   "private": true,
   "scripts": {
     "build": "eleventy",
+    "build:prod": "cross-env MINIFY=1 eleventy",
     "dev": "eleventy --serve",
     "start": "eleventy --serve"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^3.0.0"
+    "@11ty/eleventy": "^3.0.0",
+    "clean-css": "^5.3.3",
+    "cross-env": "^10.1.0",
+    "html-minifier-terser": "^7.2.0"
   }
 }

@@ -1,4 +1,4 @@
-# Production: push main → deploy site root on gh-pages (preserves /dev preview).
+# Production: push main → minified build → deploy site root on gh-pages (preserves /dev preview).
 # Preview: push dev → deploy to gh-pages/dev/ with pathPrefix /dev/ (validate before merging).
 # Optional: set repository secret PREVIEW_PASSWORD for a client-side unlock on /dev only (not true HTTP auth).
 # PRs to main: build only (no deploy).
@@ -30,6 +30,8 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run build
+        env:
+          MINIFY: "1"
 
   deploy-production:
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
@@ -42,6 +44,8 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run build
+        env:
+          MINIFY: "1"
       - run: touch ./_site/.nojekyll
       - name: Deploy to GitHub Pages (root)
         uses: JamesIves/github-pages-deploy-action@v4
